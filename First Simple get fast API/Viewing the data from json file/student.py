@@ -1,4 +1,5 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
 import json
 
 def loadData():
@@ -20,3 +21,16 @@ def about():
 def data():
     data = loadData() 
     return data 
+
+@app.get("/student/{student_id}")
+def viewStudent(student_id: str):
+    data = loadData()
+    if student_id in data:
+        return data[student_id]
+    
+@app.get("/students/{student_id}/{attribute}")
+def viewStudent(student_id: str, attribute: str):
+    data = loadData()
+    if student_id in data:
+        if attribute in data[student_id]:
+            return {attribute: data[student_id][attribute]}
