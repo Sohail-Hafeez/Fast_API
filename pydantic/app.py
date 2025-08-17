@@ -1,4 +1,4 @@
-from pydantic import BaseModel, EmailStr, Field, ValidationError , field_validator
+from pydantic import BaseModel, EmailStr, Field, ValidationError , field_validator , model_validator
 from typing import List, Dict, Optional , Annotated
 
 class Student(BaseModel):
@@ -29,6 +29,15 @@ class Student(BaseModel):
     @classmethod
     def namevalidator(cls,value):
         return value.upper()
+    
+    
+#  Field Validator is applicable only on a specific field what if we have to validate data based on two fields for taht purpose we have model_validator That allow us to acess full model
+
+    @model_validator(mode = 'after')
+    def younger_Student_Must_Have_Emergency_No(cls,model):
+        if model.age <10 and 'emergency' not in model.contactDetail:
+            raise ValueError("Student Having Age less then 10 must have a Emergency No...  ")
+        return model
         
     
     
