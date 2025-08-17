@@ -1,0 +1,62 @@
+{
+    "0001": {
+        "name": "Sohail",
+        "city": "Hajira",
+        "age": 23,
+        "gender": "Male",
+        "height": 1.75,
+        "weight": 70,
+        "bmi": 22.86,
+        "verbose": "Normal weight"
+    },
+    "0002": {
+        "name": "Ayesha",
+        "city": "Rawalpindi",
+        "age": 21,
+        "gender": "Female",
+        "height": 1.62,
+        "weight": 55,
+        "bmi": 20.96,
+        "verbose": "Normal weight"
+    },
+    "0003": {
+        "name": "Ali",
+        "city": "Lahore",
+        "age": 25,
+        "gender": "Male",
+        "height": 1.8,
+        "weight": 90,
+        "bmi": 27.78,
+        "verbose": "Overweight"
+    },
+    "0004": {
+        "name": "Sara",
+        "city": "Karachi",
+        "age": 30,
+        "gender": "Female",
+        "height": 1.55,
+        "weight": 45,
+        "bmi": 18.73,
+        "verbose": "Normal weight"
+    },
+    "0005": {
+        "name": "Bilal",
+        "city": "Islamabad",
+        "age": 28,
+        "gender": "Male",
+        "height": 1.7,
+        "weight": 110,
+        "bmi": 38.06,
+        "verbose": "Obese"
+    },
+    "0006": {
+        "name": "Sohail",
+        "city": "Hajira",
+        "age": 23,
+        "gender": "Male",
+        "height": 1.5,
+        "weight": 80.0,
+        "bmi": 35.56,
+        "verbose": "Over Weight"
+    }
+}
