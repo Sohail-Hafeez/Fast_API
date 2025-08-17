@@ -1,4 +1,4 @@
-# Student API  
+# Post Request Fast API  
 
 This is a simple **FastAPI project** that manages student data. The API allows you to **create, read, and store student details** in a JSON file. It also calculates **BMI (Body Mass Index)** and provides a **verbose description** of the student’s health status.  
 
@@ -74,3 +74,22 @@ uvicorn app:app --reload
     "verbose": "Normal weight"
   }
 }
+
+Now you can directly hit
+http://127.0.0.1:8000/docs#/default/createStudent_create_post In your case there will be different URL
+
+<img width="1360" height="679" alt="image" src="https://github.com/user-attachments/assets/b92c4098-d332-430a-ad8f-b8e4556b86ab" />
+<img width="1363" height="568" alt="image" src="https://github.com/user-attachments/assets/cdde2352-a8e1-4863-a03e-a26ae5d2238a" />
+<img width="1321" height="425" alt="image" src="https://github.com/user-attachments/assets/f0d76cbe-01f8-47c0-b6fe-c7c4ff9cf615" />
+
+Here if you change the ID and enter Unique ID data will be added as shown below
+<img width="1312" height="480" alt="image" src="https://github.com/user-attachments/assets/8e03c843-6463-46b3-92e7-4b063d72d1a2" />
+<img width="1364" height="559" alt="image" src="https://github.com/user-attachments/assets/5b3df4fa-5ec3-483b-a66d-1c5b3e4ffd55" />
+
+
+
+
+
+
+
+
